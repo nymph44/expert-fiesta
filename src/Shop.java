@@ -10,7 +10,6 @@ import java.util.ArrayList;
 public class Shop extends Trader
 {
     // instance variables - replace the example below with your own
-    
 
     /**
      * Constructor for objects of class Shop
@@ -28,7 +27,7 @@ public class Shop extends Trader
         ArrayList<String> Armor = new ArrayList<String>();
         ArrayList<String> Weapons = new ArrayList<String>();
         ArrayList<String> foods = new ArrayList<String>();
-        
+ 
         Ammo.add("1: 9mm, $0.70");
         Ammo.add("2: 5.56mm, $1.02");
         Ammo.add("3: 7.62mm, $1.32");
@@ -95,15 +94,65 @@ public class Shop extends Trader
     }
     
     public void buyAmmo(int productNummer){
+        ArrayList<String> backPack = new ArrayList<String>();
+        
         if(productNummer == 1){
             System.out.println("50 bullets, 9mm bought.");
+               
         }   if(productNummer == 2){
             System.out.println("35 bullets, 5.56mm bought.");
         }   if(productNummer == 3){
             System.out.println("25 bullets, 7.62mm bought.");
         }   if(productNummer == 4){
             System.out.println("8 bullets, 12mm bought.");
-        }   else{
+        }   if((productNummer <= 1) || (productNummer >= 4)){
+            System.out.println("Invalid product code entered!");
+        }
+        
+        for(String object: backPack){
+           if(productNummer == 1){
+               backPack.add("9mm: 50x");
+           }
+        }
+        
+        for(String object: backPack){
+           if(productNummer == 2){
+               backPack.add("5.56mm: 35x");
+               
+           }
+        }
+        
+        for(String object: backPack){
+           if(productNummer == 3){
+               backPack.add("7.62mm: 25x");
+           }
+        }
+        
+        for(String object: backPack){
+           if(productNummer == 4){
+               backPack.add("12mm: 8x");
+           }
+        }
+        
+        
+    }
+    
+    public void getBackPackitems(){
+        
+        
+    }
+    
+    public void buyCarbine(int productNummer){
+        if(productNummer == 1){
+            System.out.println("AK-47 bought.");
+            
+        }   if(productNummer == 2){
+            System.out.println("M16 bought.");
+        }   if(productNummer == 3){
+            System.out.println("SCAL-H bought.");
+        }   if(productNummer == 4){
+            System.out.println("M4A16 bought.");
+        }   if((productNummer <= 1) || (productNummer >= 4)){
             System.out.println("Invalid product code entered!");
         }
     }

@@ -24,6 +24,7 @@ public class backPack extends Person
     {
         // initialise instance variables
         ArrayList<String> backPack = new ArrayList<String>();
+        
     }
 
     /**
