@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Trader
+comment1.params=
+comment1.target=void\ startMessage()
+comment2.params=respond
+comment2.target=java.lang.String\ doYouWantToTalk(java.lang.String)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+comment4.params=
+comment4.target=void\ showMerch()
+numComments=5
