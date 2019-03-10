@@ -36,8 +36,8 @@ public class Trader {
     }
 
     public static void main(String[] args){
-        Conversation conversationObject = new Conversation();
-        startMessage();
+        //Conversation conversationObject = new Conversation();
+        //startMessage();
         
         
     }

@@ -7,7 +7,8 @@ public class Main{
         personObject.setName(namePlayer);
 
         this.myName = namePlayer;
-
+        Sprites spritesObject = new Sprites();
+        spritesObject.facePlayer();
     }
 
     public void resetName(String namePlayer){
@@ -24,14 +25,15 @@ public class Main{
     }
 
     public String engageTrader(String anwser){
-        Conversation conversationObject = new Conversation();
+        //Conversation conversationObject = new Conversation();
         Trader traderObject = new Trader();
         //conversationObject.intialQ();
         //conversationObject.yourChoice();
         traderObject.showMerch();
+        
+        Sprites spritesObject = new Sprites();
+        spritesObject.facePlayerOpenEyes();
         return anwser;
-        
-        
     }
     
     public void ammo1(){

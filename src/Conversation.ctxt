@@ -2,8 +2,8 @@
 comment0.target=Conversation
 comment1.params=
 comment1.target=void\ yourChoice()
-comment2.params=
-comment2.target=Conversation()
+comment2.params=yourChoice
+comment2.target=Conversation(java.lang.String)
 comment3.params=args
 comment3.target=void\ main(java.lang.String[])
 numComments=4
